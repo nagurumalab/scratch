@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>What Can JavaScript Do?</h1>
+
+<p id="demo">I'm the initial content.</p>
+
+<button type="button"
+onclick="changeText()">
+Click Me!</button>
+
+<script>
+function changeText() {
+    var myText = document.getElementById('demo');
+    if (myText.innerHTML.match('initial')) {
+        myText.innerHTML = "I'm the new content :P" ;
+    } else {
+        myText.innerHTML = "I'm the initial content." ;
+    }
+}
+</script>
+
+
+</body>
+</html>
